@@ -1,6 +1,10 @@
 #include <iostream>
+#include "src/Tetris.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    Tetris game(20, 10);
+
+    game.play();
+
     return 0;
 }

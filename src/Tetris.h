@@ -8,6 +8,27 @@
 
 class Tetris {
 
+public:
+    // 构造函数
+    Tetris(int rows, int cols);
+
+    /**
+     * 游戏初始化
+     */
+    void init();
+
+    /**
+     * 开始游戏
+     */
+    void play();
+
+private:
+    int needUpdate = true;
+
+    void ketEvent();
+    void updateWindow();
+
+    void dropBlock();
 };
 
 
